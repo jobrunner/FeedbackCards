@@ -28,8 +28,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1v-xM-6gT">
-                                <rect key="frame" x="10" y="92" width="245.5" height="72"/>
-                                <string key="text">Karten für 
+                                <rect key="frame" x="10" y="92" width="246" height="72"/>
+                                <string key="text">Cards for 
 Peer Feedbacks</string>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="31"/>
                                 <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		244AE39D1E15D3CD00150912 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24A22A011E1569E7006C7F7A /* FeedbackCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A22A041E1569E7006C7F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24A22A061E1569E7006C7F7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				24A22A0E1E1569E7006C7F7A /* Base */,
+				244AE39D1E15D3CD00150912 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -304,6 +306,7 @@
 				24A22A151E1569E7006C7F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
