@@ -292,9 +292,3 @@ class CardDeck {
         return self
     }
 }
-
-protocol CardAdapter {
-    
-    func configureWithCard(_ card: Card)
-}
-

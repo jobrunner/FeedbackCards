@@ -11,6 +11,7 @@
 		244AE3A11E15EBA300150912 /* Graphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE39F1E15EBA300150912 /* Graphics.swift */; };
 		244AE3A31E15EBF800150912 /* CardFigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE3A21E15EBF800150912 /* CardFigureView.swift */; };
 		244AE3A51E15EC0F00150912 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE3A41E15EC0F00150912 /* CardType.swift */; };
+		244AE3A71E170DFE00150912 /* CardAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE3A61E170DFE00150912 /* CardAdapter.swift */; };
 		24A22A051E1569E7006C7F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A22A041E1569E7006C7F7A /* AppDelegate.swift */; };
 		24A22A071E1569E7006C7F7A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A22A061E1569E7006C7F7A /* MainViewController.swift */; };
 		24A22A0A1E1569E7006C7F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A22A081E1569E7006C7F7A /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		244AE39F1E15EBA300150912 /* Graphics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphics.swift; sourceTree = "<group>"; };
 		244AE3A21E15EBF800150912 /* CardFigureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardFigureView.swift; sourceTree = "<group>"; };
 		244AE3A41E15EC0F00150912 /* CardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		244AE3A61E170DFE00150912 /* CardAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardAdapter.swift; sourceTree = "<group>"; };
 		24A22A011E1569E7006C7F7A /* FeedbackCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A22A041E1569E7006C7F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24A22A061E1569E7006C7F7A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,11 +65,12 @@
 		24A22A031E1569E7006C7F7A /* FeedbackCards */ = {
 			isa = PBXGroup;
 			children = (
+				24A22A041E1569E7006C7F7A /* AppDelegate.swift */,
 				244AE39E1E15EBA300150912 /* Card.swift */,
 				244AE3A41E15EC0F00150912 /* CardType.swift */,
+				244AE3A61E170DFE00150912 /* CardAdapter.swift */,
 				244AE3A21E15EBF800150912 /* CardFigureView.swift */,
 				244AE39F1E15EBA300150912 /* Graphics.swift */,
-				24A22A041E1569E7006C7F7A /* AppDelegate.swift */,
 				24A22A061E1569E7006C7F7A /* MainViewController.swift */,
 				24A22A081E1569E7006C7F7A /* Main.storyboard */,
 				24A22A0B1E1569E7006C7F7A /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 			files = (
 				24A22A071E1569E7006C7F7A /* MainViewController.swift in Sources */,
 				244AE3A01E15EBA300150912 /* Card.swift in Sources */,
+				244AE3A71E170DFE00150912 /* CardAdapter.swift in Sources */,
 				244AE3A31E15EBF800150912 /* CardFigureView.swift in Sources */,
 				244AE3A11E15EBA300150912 /* Graphics.swift in Sources */,
 				24A22A051E1569E7006C7F7A /* AppDelegate.swift in Sources */,
