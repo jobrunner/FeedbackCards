@@ -80,17 +80,18 @@ class MenuCardCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayo
             width: width,
             height: cell.frame.size.height
         )
-        
-        let pageViewController = StoryboardHelper.controller("CardPageViewController") as! CardPageViewController
         */
-
+        
         // set the current tapped Card to the current
         let _ = CardDeck.index(fromCard: cell.card)
+
+        //
+        let presentingController = collectionView.parentViewController
+        let pageViewController = StoryboardHelper.controller("CardPageViewController") as! CardPageViewController
         
-        /*
-        self.present(pageViewController, animated: true, completion: {
-            NSLog("animation complete")
+        presentingController?.present(pageViewController, animated: true, completion: {
+
+            
         })
-        */
     }
 }

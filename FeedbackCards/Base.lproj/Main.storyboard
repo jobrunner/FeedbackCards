@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,11 +17,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GW6-os-pAo">
-                                <rect key="frame" x="0.0" y="192" width="568" height="128"/>
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Z1G-Y7-v1K"/>
@@ -48,6 +48,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="GW6-os-pAo" id="Fsg-CB-OvX"/>
+                        <segue destination="RYE-Ib-6di" kind="presentation" identifier="PageViewControllerSegue" id="nPU-he-sBC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -55,6 +56,108 @@
                 <customObject id="T15-hg-Hol" customClass="MenuCardCollectionViewDelegate" customModule="FeedbackCards" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="140" y="102.99850074962519"/>
+        </scene>
+        <!--Card Page View Controller-->
+        <scene sceneID="PtW-qE-7fC">
+            <objects>
+                <pageViewController storyboardIdentifier="CardPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="10" navigationOrientation="horizontal" spineLocation="none" id="RYE-Ib-6di" customClass="CardPageViewController" customModule="FeedbackCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <outlet property="dataSource" destination="IyJ-RP-T6L" id="W8o-qC-ip7"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgS-Rm-BqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="IyJ-RP-T6L" customClass="CardPageViewDataSource" customModule="FeedbackCards" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="917" y="102"/>
+        </scene>
+        <!--Card View Controller-->
+        <scene sceneID="Vrh-ZM-40e">
+            <objects>
+                <viewController storyboardIdentifier="CardViewController" id="0mV-NW-Twe" customClass="CardViewController" customModule="FeedbackCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xLS-XK-CSH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vk3-5H-GFc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mig-pY-Wnu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soD-bb-pSX">
+                                <rect key="frame" x="16" y="45" width="288" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zr-ba-bL9">
+                                        <rect key="frame" x="169" y="18" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htR-uK-bbh">
+                                        <rect key="frame" x="24" y="-36" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4I-EG-lme">
+                                                <rect key="frame" x="99" y="53" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gz2-rl-1wm">
+                                <rect key="frame" x="16" y="121" width="338" height="514"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s05-xs-og1">
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="247"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HEl-Bj-MO2" customClass="CardFigureView" customModule="FeedbackCards" customModuleProvider="target">
+                                                <rect key="frame" x="49" y="59" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m0L-h7-g2K">
+                                        <rect key="frame" x="0.0" y="267" width="338" height="247"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICC-2P-Lar">
+                                                <rect key="frame" x="148" y="113" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="ICC-2P-Lar" id="cuZ-ia-Dah"/>
+                        <outlet property="descriptionView" destination="m0L-h7-g2K" id="eAW-kT-f6Z"/>
+                        <outlet property="figureCardView" destination="HEl-Bj-MO2" id="Tqt-CU-lu1"/>
+                        <outlet property="figureView" destination="s05-xs-og1" id="LTl-df-ZJH"/>
+                        <outlet property="nameLabel" destination="8Zr-ba-bL9" id="zuh-0m-3Pb"/>
+                        <outlet property="nameView" destination="soD-bb-pSX" id="7ep-Bl-MfK"/>
+                        <outlet property="shortCutLabel" destination="O4I-EG-lme" id="HQY-pS-i7D"/>
+                        <outlet property="shortCutView" destination="htR-uK-bbh" id="FsQ-42-UZd"/>
+                        <outlet property="stackView" destination="gz2-rl-1wm" id="BwY-E4-Ht0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUg-OH-moj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="101"/>
         </scene>
     </scenes>
 </document>

@@ -15,6 +15,11 @@
 		244AE3AD1E17161800150912 /* MenuCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244AE3AB1E17161800150912 /* MenuCardCollectionViewCell.xib */; };
 		244AE3AF1E171D4900150912 /* MenuCardCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE3AE1E171D4900150912 /* MenuCardCollectionViewDelegate.swift */; };
 		244AE3B11E17221F00150912 /* MenuCardCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE3B01E17221F00150912 /* MenuCardCollectionDataSource.swift */; };
+		244AE3B91E1758DC00150912 /* CardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE3B71E1758DC00150912 /* CardPageViewController.swift */; };
+		244AE3BC1E17598900150912 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE3BB1E17598900150912 /* StoryboardHelper.swift */; };
+		244AE3C81E17FB1D00150912 /* CardPageViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE3C71E17FB1D00150912 /* CardPageViewDataSource.swift */; };
+		244AE3D81E1816F300150912 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE3D71E1816F300150912 /* CardViewController.swift */; };
+		244AE3DA1E182ACC00150912 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244AE3D91E182ACC00150912 /* UICollectionView.swift */; };
 		24A22A051E1569E7006C7F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A22A041E1569E7006C7F7A /* AppDelegate.swift */; };
 		24A22A071E1569E7006C7F7A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A22A061E1569E7006C7F7A /* MainViewController.swift */; };
 		24A22A0A1E1569E7006C7F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24A22A081E1569E7006C7F7A /* Main.storyboard */; };
@@ -31,6 +36,11 @@
 		244AE3AB1E17161800150912 /* MenuCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		244AE3AE1E171D4900150912 /* MenuCardCollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCardCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		244AE3B01E17221F00150912 /* MenuCardCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCardCollectionDataSource.swift; sourceTree = "<group>"; };
+		244AE3B71E1758DC00150912 /* CardPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPageViewController.swift; sourceTree = "<group>"; };
+		244AE3BB1E17598900150912 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		244AE3C71E17FB1D00150912 /* CardPageViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPageViewDataSource.swift; sourceTree = "<group>"; };
+		244AE3D71E1816F300150912 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		244AE3D91E182ACC00150912 /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		24A22A011E1569E7006C7F7A /* FeedbackCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedbackCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A22A041E1569E7006C7F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24A22A061E1569E7006C7F7A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +80,7 @@
 		24A22A031E1569E7006C7F7A /* FeedbackCards */ = {
 			isa = PBXGroup;
 			children = (
+				244AE3BB1E17598900150912 /* StoryboardHelper.swift */,
 				24A22A041E1569E7006C7F7A /* AppDelegate.swift */,
 				244AE39E1E15EBA300150912 /* Card.swift */,
 				244AE3A41E15EC0F00150912 /* CardType.swift */,
@@ -80,10 +91,14 @@
 				244AE3AE1E171D4900150912 /* MenuCardCollectionViewDelegate.swift */,
 				244AE3AA1E17161800150912 /* MenuCardCollectionViewCell.swift */,
 				244AE3AB1E17161800150912 /* MenuCardCollectionViewCell.xib */,
+				244AE3B71E1758DC00150912 /* CardPageViewController.swift */,
+				244AE3C71E17FB1D00150912 /* CardPageViewDataSource.swift */,
+				244AE3D71E1816F300150912 /* CardViewController.swift */,
 				24A22A081E1569E7006C7F7A /* Main.storyboard */,
 				24A22A0B1E1569E7006C7F7A /* Assets.xcassets */,
 				24A22A0D1E1569E7006C7F7A /* LaunchScreen.storyboard */,
 				24A22A101E1569E7006C7F7A /* Info.plist */,
+				244AE3D91E182ACC00150912 /* UICollectionView.swift */,
 			);
 			path = FeedbackCards;
 			sourceTree = "<group>";
@@ -163,10 +178,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				24A22A071E1569E7006C7F7A /* MainViewController.swift in Sources */,
+				244AE3B91E1758DC00150912 /* CardPageViewController.swift in Sources */,
+				244AE3DA1E182ACC00150912 /* UICollectionView.swift in Sources */,
 				244AE3A01E15EBA300150912 /* Card.swift in Sources */,
 				244AE3A31E15EBF800150912 /* CardFigureView.swift in Sources */,
 				244AE3A11E15EBA300150912 /* Graphics.swift in Sources */,
+				244AE3C81E17FB1D00150912 /* CardPageViewDataSource.swift in Sources */,
 				244AE3AC1E17161800150912 /* MenuCardCollectionViewCell.swift in Sources */,
+				244AE3D81E1816F300150912 /* CardViewController.swift in Sources */,
+				244AE3BC1E17598900150912 /* StoryboardHelper.swift in Sources */,
 				24A22A051E1569E7006C7F7A /* AppDelegate.swift in Sources */,
 				244AE3B11E17221F00150912 /* MenuCardCollectionDataSource.swift in Sources */,
 				244AE3A51E15EC0F00150912 /* CardType.swift in Sources */,
