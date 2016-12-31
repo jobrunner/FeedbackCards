@@ -22,13 +22,38 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet var collectionView: UICollectionView!
+
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        
+        registerNibs()
+        
+        collectionView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
 
         super.didReceiveMemoryWarning()
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        
+        return false
+    }
+    
+    override func viewWillLayoutSubviews() {
+        
+        collectionView.collectionViewLayout.invalidateLayout()
+    }
+}
+
+extension MainViewController {
+    
+    func registerNibs() {
+        
+        let nib = UINib.init(nibName: "MenuCardCollectionViewCell", bundle: Bundle.main)
+        collectionView!.register(nib, forCellWithReuseIdentifier: "MenuCardCollectionViewCell")
     }
 }
