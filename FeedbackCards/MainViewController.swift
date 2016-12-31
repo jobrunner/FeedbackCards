@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
     
     override var prefersStatusBarHidden: Bool {
         
-        return false
+        return true
     }
     
     override func viewWillLayoutSubviews() {
