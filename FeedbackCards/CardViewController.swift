@@ -93,6 +93,34 @@ class CardViewController: UIViewController {
         }
     }
 
+    override func viewWillTransition(to size: CGSize,
+                                     with coordinator: UIViewControllerTransitionCoordinator) {
+        
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        let useWideDesign = size.width >= size.height
+
+        if useWideDesign {
+            stackView.axis = .horizontal
+        }
+        else {
+            stackView.axis = .vertical
+        }
+        
+        coordinator.animate(
+            alongsideTransition: { _ in
+                
+                self.nameView.transform = CGAffineTransform(scaleX: 1.02, y: 1.02)
+                self.stackView.transform = CGAffineTransform(scaleX: 1.02, y: 1.02)
+        },
+            completion: { _ in
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.nameView.transform = CGAffineTransform.identity
+                    self.stackView.transform = CGAffineTransform.identity
+                })
+        })
+    }
+    
     /*
     // MARK: - Navigation
 
