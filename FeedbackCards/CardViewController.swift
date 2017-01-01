@@ -76,15 +76,6 @@ class CardViewController: UIViewController {
         let size = view.bounds.size
         let useWideDesign = size.width >= size.height
         
-        // Alle Sonderfälle, die direkt mit einer Änderunge
-        // der SizeClass zu tun haben, konnten direkt über
-        // Verying des AutoLayouts im IB eingestellt werden
-        if self.traitCollection.verticalSizeClass == .regular {
-        }
-        
-        if self.traitCollection.verticalSizeClass == .regular {
-        }
-        
         if useWideDesign {
             stackView.axis = .horizontal
         }
