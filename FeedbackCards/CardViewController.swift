@@ -22,18 +22,20 @@ import UIKit
 
 class CardViewController: UIViewController {
 
+    let cornerRadius: CGFloat = 6.5
+    let alpha: CGFloat = 0.8
+
+    var primaryColor: UIColor!
+
     @IBOutlet weak var nameView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var shortCutView: UIView!
     @IBOutlet weak var shortCutLabel: UILabel!
     @IBOutlet weak var figureView: UIView!
-    @IBOutlet weak var figureCardView: UIView!
+    @IBOutlet weak var figureCardView: CardFigureView!
     @IBOutlet weak var descriptionView: UIView!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
-    
-    var primaryColor: UIColor!
-    var cornerRadius: CGFloat!
 
     var card: Card! {
         didSet {
@@ -41,6 +43,24 @@ class CardViewController: UIViewController {
         }
     }
 
+    override func awakeFromNib() {
+
+        view.backgroundColor = primaryColor
+        
+        shortCutView.layer.cornerRadius = cornerRadius
+        shortCutView.layer.borderColor = UIColor.white.cgColor
+        shortCutView.layer.borderWidth = 1.5
+
+        nameView.layer.cornerRadius = cornerRadius
+        nameView.alpha = alpha
+        
+        figureView.layer.cornerRadius = cornerRadius
+        figureView.alpha = alpha
+
+        descriptionView.layer.cornerRadius = cornerRadius
+        descriptionView.alpha = alpha
+    }
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -88,54 +108,25 @@ class CardViewController: UIViewController {
         super.viewWillAppear(animated)
         
         primaryColor = card.colorCode
-        cornerRadius = 6.5
-        
+
         view.backgroundColor = primaryColor
         
-        // figureImageView.image = UIImage(named: card.image)
-        
-        // backgroundOverlay.backgroundColor = primaryColor
-        // backgroundOverlay.alpha = 0.5
-        
-        shortCutView.layer.cornerRadius = cornerRadius
-        shortCutView.layer.borderColor = UIColor.white.cgColor
-        shortCutView.layer.borderWidth = 1.5
         shortCutView.backgroundColor = primaryColor
-        shortCutView.alpha = 1.0
-        
         shortCutLabel.text = card.shortCut
         
-        
         nameLabel.text = card.name
-        nameView.layer.cornerRadius = cornerRadius
-        
-        
-        figureView.layer.cornerRadius = cornerRadius
-        
-        
-        descriptionView.layer.cornerRadius = cornerRadius
-        
-        
-        //        descriptionBorderView.layer.borderWidth = 1.0
-        //        descriptionBorderView.layer.borderColor = UIColor.white.cgColor
-        //        descriptionBorderView.layer.cornerRadius = cornerRadius
-        
+        figureCardView.cardType = card.cardType
         descriptionLabel.text = card.description
-        
-        //        helpButton.layer.borderWidth = 1.0
-        //        helpButton.layer.cornerRadius = 10.0
-        
-        
-        // Do any additional setup after loading the view.
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self,
                                                          action: #selector(actionClose(_:))))
     }
+}
 
-    // extension!
+extension CardViewController {
+    
     func actionClose(_ tap: UITapGestureRecognizer) {
         
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
-    
 }
