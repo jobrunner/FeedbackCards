@@ -109,7 +109,7 @@ struct CardDataProvider {
                     name: NSLocalizedString("Vorbild", comment: "Name of card"),
                     shortCut: NSLocalizedString("V", comment: "Shortcut of card"),
                     image: "vorbild",
-                    description: NSLocalizedString("Track-Record vorhandel.\nEs gibt viele Beispiele, die man nennen kann. Andere wurden von diesem Vorbild inspiriert.", comment: "Description of card"),
+                    description: NSLocalizedString("Track-Record ist vorhanden.\nEs gibt viele Beispiele, die man nennen kann.\nAndere wurden von diesem Vorbild inspiriert.", comment: "Description of card"),
                     helpText:NSLocalizedString("", comment: "Helptext of card"),
                     colorCode: Card.colorFrom(hexCode: "#669374"))
             ]
