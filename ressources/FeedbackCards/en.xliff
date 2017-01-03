@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="FeedbackCards/Base.lproj/LaunchScreen.storyboard" source-language="de" datatype="plaintext" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
+    </header>
+    <body>
+      <trans-unit id="q1v-xM-6gT.text">
+        <source>Karten für 
+Peer Feedbacks</source>
+        <target>Cards for 
+Peer Feedbacks</target>
+        <note>Class = "UILabel"; text = "Karten für \nPeer Feedbacks"; ObjectID = "q1v-xM-6gT";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="FeedbackCards/Base.lproj/Main.storyboard" source-language="de" datatype="plaintext" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
+    </header>
+    <body>
+      <trans-unit id="8Zr-ba-bL9.text">
+        <source>ZUSCHAUER</source>
+        <target></target>
+        <note>Class = "UILabel"; text = "ENTHALTUNG"; ObjectID = "8Zr-ba-bL9";</note>
+      </trans-unit>
+      <trans-unit id="162-Oi-sv8.text">
+        <source>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</source>
+        <target></target>
+        <note>Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "162-Oi-sv8";</note>
+      </trans-unit>
+      <trans-unit id="ICC-2P-Lar.text">
+        <source>Track-Record vorhandel.\nEs gibt viele Beispiele, die man nennen kann. Andere wurden von diesem Vorbild inspiriert.</source>
+        <target></target>
+        <note>Class = "UILabel"; text = "Track-Record vorhandel.\\nEs gibt viele Beispiele, die man nennen kann. Andere wurden von diesem Vorbild inspiriert."; ObjectID = "ICC-2P-Lar";</note>
+      </trans-unit>
+      <trans-unit id="Mse-jk-T9D.text">
+        <source>Feedback Karten</source>
+        <target>Feedback Cards</target>
+        <note>Class = "UILabel"; text = "Feedback Karten"; ObjectID = "Mse-jk-T9D";</note>
+      </trans-unit>
+      <trans-unit id="O4I-EG-lme.text">
+        <source>M</source>
+        <target></target>
+        <note>Class = "UILabel"; text = "M"; ObjectID = "O4I-EG-lme";</note>
+      </trans-unit>
+      <trans-unit id="cmd-9i-dEW.text">
+        <source>No-Device-Policy-Hack</source>
+        <target>No-Device-Policy-Hack</target>
+        <note>Class = "UILabel"; text = "No-Device-Policy-Hack"; ObjectID = "cmd-9i-dEW";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="FeedbackCards/Info.plist" source-language="de" datatype="plaintext" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>Feedback</source><target>Feedback</target>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="FeedbackCards/Localizable.strings" source-language="de" datatype="plaintext" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.2.1" build-num="8C1002"/>
+    </header>
+    <body>
+      <trans-unit id="?">
+        <source>?</source>
+        <note>Shortcut of card</note><target>?</target>
+      </trans-unit>
+      <trans-unit id="Enthaltung">
+        <source>Enthaltung</source>
+        <note>Name of card</note><target>Abstention</target>
+      </trans-unit>
+      <trans-unit id="Es gibt einzelne Beispiele,\ndie einigen Leuten bekannt sind.">
+        <source>Es gibt einzelne Beispiele,
+die einigen Leuten bekannt sind.</source>
+        <note>Description of card</note><target>There are some examples,
+which are known to some people.</target>
+      </trans-unit>
+      <trans-unit id="Es gibt keine Beispiele,\nda ehr in anderen Bereichen enganiert.">
+        <source>Es gibt keine Beispiele,
+da ehr in anderen Bereichen enganiert.</source>
+        <note>Description of card</note><target>There are no examples,
+therefore engaged in other areas.</target>
+      </trans-unit>
+      <trans-unit id="Ich kann oder will kein Fremdbild dazu abgeben.">
+        <source>Ich kann oder will kein Fremdbild dazu abgeben.</source>
+        <note>Description of card</note><target>I can not or do not want to give feedback.</target>
+      </trans-unit>
+      <trans-unit id="M">
+        <source>M</source>
+        <note>Shortcut of card</note><target>D</target>
+      </trans-unit>
+      <trans-unit id="Macher">
+        <source>Macher</source>
+        <note>Name of card</note><target>Doer</target>
+      </trans-unit>
+      <trans-unit id="Mitspieler">
+        <source>Mitspieler</source>
+        <note>Name of card</note><target>Player</target>
+      </trans-unit>
+      <trans-unit id="P">
+        <source>P</source>
+        <note>Shortcut of card</note><target>P</target>
+      </trans-unit>
+      <trans-unit id="Padawan">
+        <source>Padawan</source>
+        <note>Name of card</note><target>Novice</target>
+      </trans-unit>
+      <trans-unit id="S">
+        <source>S</source>
+        <note>Shortcut of card</note><target>N</target>
+      </trans-unit>
+      <trans-unit id="Track-Record ist vorhanden.\nEs gibt viele Beispiele, die man nennen kann.">
+        <source>Track-Record ist vorhanden.
+Es gibt viele Beispiele, die man nennen kann.</source>
+        <note>Description of card</note><target>Track record is available.
+There are many examples that can be called.</target>
+      </trans-unit>
+      <trans-unit id="Track-Record ist vorhanden.\nEs gibt viele Beispiele, die man nennen kann.\nAndere wurden von diesem Vorbild inspiriert.">
+        <source>Track-Record ist vorhanden.
+Es gibt viele Beispiele, die man nennen kann.
+Andere wurden von diesem Vorbild inspiriert.</source>
+        <note>Description of card</note><target>Track record is available.
+There are many examples that can be called.
+Others were inspired by this model.</target>
+      </trans-unit>
+      <trans-unit id="Unbekannt">
+        <source>Unbekannt</source>
+        <note>App-Version</note><target>Unknown</target>
+      </trans-unit>
+      <trans-unit id="V">
+        <source>V</source>
+        <note>Shortcut of card</note><target>M</target>
+      </trans-unit>
+      <trans-unit id="Vorbild">
+        <source>Vorbild</source>
+        <note>Name of card</note><target>Model</target>
+      </trans-unit>
+      <trans-unit id="Z">
+        <source>Z</source>
+        <note>Shortcut of card</note><target>V</target>
+      </trans-unit>
+      <trans-unit id="Zuschauer">
+        <source>Zuschauer</source>
+        <note>Name of card</note><target>Viewer</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
