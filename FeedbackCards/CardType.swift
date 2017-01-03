@@ -20,7 +20,7 @@
 
 enum CardType {
     case design
-    case enthalter
+    case enthaltung
     case zuschauer
     case padawan
     case mitspieler

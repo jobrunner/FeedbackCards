@@ -35,7 +35,7 @@ class CardFigureView: UIView {
     override func draw(_ rect: CGRect) {
 
         switch cardType {
-        case .design, .enthalter:
+        case .design, .enthaltung:
             Graphics.drawEnthalter2(frame: rect, resizing: .aspectFit)
         
         case .zuschauer:
