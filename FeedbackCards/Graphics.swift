@@ -22,7 +22,7 @@ class Graphics: NSObject {
     static let vorbildColor = UIColor(hue: 0.385, saturation: 0.306, brightness: 0.576, alpha: 1)
     static let macherColor = UIColor(hue: 0.75, saturation: 0.446, brightness: 0.616, alpha: 1)
     static let mitspielerColor = UIColor(hue: 0.03, saturation: 0.587, brightness: 0.769, alpha: 1)
-    static let padawanColor2 = UIColor(hue: 0.584, saturation: 0.42, brightness: 0.682, alpha: 1)
+    static let padawanColor = UIColor(hue: 0.584, saturation: 0.42, brightness: 0.682, alpha: 1)
     static let zuschauerColor = UIColor(hue: 0.108, saturation: 0.755, brightness: 0.784, alpha: 1)
     static let enthalterColor = UIColor(white: 0.667, alpha: 1)
     
