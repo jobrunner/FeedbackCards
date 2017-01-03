@@ -1,0 +1,64 @@
+/* Shortcut of card */
+"?" = "?";
+
+/* Name of card */
+"Enthaltung" = "Abstention";
+
+/* Description of card */
+"Es gibt einzelne Beispiele,
+die einigen Leuten bekannt sind." = "There are some examples,
+which are known to some people.";
+
+/* Description of card */
+"Es gibt keine Beispiele,
+da ehr in anderen Bereichen enganiert." = "There are no examples,
+therefore engaged in other areas.";
+
+/* Description of card */
+"Ich kann oder will kein Fremdbild dazu abgeben." = "I can not or do not want to give feedback.";
+
+/* Shortcut of card */
+"M" = "D";
+
+/* Name of card */
+"Macher" = "Doer";
+
+/* Name of card */
+"Mitspieler" = "Player";
+
+/* Shortcut of card */
+"P" = "P";
+
+/* Name of card */
+"Padawan" = "Novice";
+
+/* Shortcut of card */
+"S" = "N";
+
+/* Description of card */
+"Track-Record ist vorhanden.
+Es gibt viele Beispiele, die man nennen kann." = "Track record is available.
+There are many examples that can be called.";
+
+/* Description of card */
+"Track-Record ist vorhanden.
+Es gibt viele Beispiele, die man nennen kann.
+Andere wurden von diesem Vorbild inspiriert." = "Track record is available.
+There are many examples that can be called.
+Others were inspired by this model.";
+
+/* App-Version */
+"Unbekannt" = "Unknown";
+
+/* Shortcut of card */
+"V" = "M";
+
+/* Name of card */
+"Vorbild" = "Model";
+
+/* Shortcut of card */
+"Z" = "V";
+
+/* Name of card */
+"Zuschauer" = "Viewer";
+

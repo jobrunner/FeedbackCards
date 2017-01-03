@@ -27,10 +27,16 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        
+
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(reloadData),
+            name: UserDefaults.didChangeNotification,
+            object: nil
+        )
+    
         registerNibs()
-        
-        collectionView.reloadData()
+        reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +53,26 @@ class MainViewController: UIViewController {
         
         collectionView.collectionViewLayout.invalidateLayout()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if segue.identifier == "InfoSegue" {
+            
+            let destinationViewController = segue.destination as UIViewController
+            
+            destinationViewController.modalTransitionStyle = .crossDissolve
+            destinationViewController.modalPresentationStyle = .overCurrentContext
+//            self.present(destinationViewController,
+//                         animated: true,
+//                         completion: nil)
+            return
+         }
+    }
+
+    @IBAction func settingsButtonTouchUpInside(_ sender: UIButton) {
+
+        UIApplication.shared.openURL(URL(string:UIApplicationOpenSettingsURLString)!)
+    }
 }
 
 extension MainViewController {
@@ -55,5 +81,11 @@ extension MainViewController {
         
         let nib = UINib.init(nibName: "MenuCardCollectionViewCell", bundle: Bundle.main)
         collectionView!.register(nib, forCellWithReuseIdentifier: "MenuCardCollectionViewCell")
+    }
+    
+    func reloadData() {
+        
+        CardDeck.reset()
+        collectionView.reloadData()
     }
 }

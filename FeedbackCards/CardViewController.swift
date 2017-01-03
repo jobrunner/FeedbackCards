@@ -64,6 +64,13 @@ class CardViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(dismissViewController),
+            name: UserDefaults.didChangeNotification,
+            object: nil
+        )
     }
 
     override func didReceiveMemoryWarning() {
@@ -143,9 +150,14 @@ class CardViewController: UIViewController {
 }
 
 extension CardViewController {
+
+    func dismissViewController() {
+
+        presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     
     func actionClose(_ tap: UITapGestureRecognizer) {
         
-        presentingViewController?.dismiss(animated: true, completion: nil)
+        dismissViewController()
     }
 }
