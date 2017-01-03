@@ -30,19 +30,14 @@ class MenuCardCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayo
                              layout collectionViewLayout: UICollectionViewLayout,
                              insetForSectionAt section: Int) -> UIEdgeInsets {
 
-        if collectionView.traitCollection.verticalSizeClass == .regular {
-         
-            return UIEdgeInsetsMake(0, 0, 0, 0)
-        }
-        
         let collectionViewWidth = collectionView.bounds.width
         let cellCount = CGFloat(CardDeck.cards.count)
         let totalCellWidth = itemSize.width * cellCount
         let totalSpacingWidth = minimumLineSpacing * (cellCount - 1)
         let leftInset = (collectionViewWidth - CGFloat(totalCellWidth + totalSpacingWidth)) / 2;
-        let rightInset = leftInset
+        let inset = (leftInset < 0) ? 0.0 : leftInset
         
-        return UIEdgeInsetsMake(0, leftInset, 0, rightInset)
+        return UIEdgeInsetsMake(0.0, inset, 0.0, inset)
     }
     
     open func collectionView(_ collectionView: UICollectionView,
