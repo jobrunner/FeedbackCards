@@ -140,7 +140,7 @@ class CardViewController: UIViewController {
         shortCutView.backgroundColor = primaryColor
         shortCutLabel.text = card.shortCut
         
-        nameLabel.text = card.name
+        nameLabel.text = card.name.uppercased(with: Locale.current)
         figureCardView.cardType = card.cardType
         descriptionLabel.text = card.description
         
