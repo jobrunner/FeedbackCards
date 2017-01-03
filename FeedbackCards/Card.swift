@@ -50,131 +50,140 @@ extension Card {
     }
 }
 
-struct CardDataProvider {
+struct CardDataOptions {
     
-    static var cards: [Card] {
-        get {
-            return [
-                /*
+    let showAbstentionCard: Bool
+    let useNumericLevelShortCuts: Bool
+    
+    init() {
+        showAbstentionCard = UserDefaults.standard.bool(forKey: "showAbstentionCard")
+        useNumericLevelShortCuts = UserDefaults.standard.bool(forKey: "useNumericLevelShortCuts")
+    }
+}
+
+struct CardDataProvider {
+
+    fileprivate static var arr: [Card] = []
+
+    fileprivate static func reset() {
+        
+        CardDataProvider.arr = []
+    }
+    
+    func cards() -> [Card] {
+        
+        if CardDataProvider.arr.count > 0 {
+
+            return CardDataProvider.arr
+        }
+        
+        let options = CardDataOptions()
+
+        if options.showAbstentionCard {
+        
+            CardDataProvider.arr.append(
                 Card(
                     id: 1,
                     cardType: .enthaltung,
                     name: NSLocalizedString("Enthaltung", comment: "Name of card"),
-                    shortCut: NSLocalizedString("?", comment: "Shortcut of card"),
+                    shortCut: options.useNumericLevelShortCuts ? "?" : NSLocalizedString("?", comment: "Shortcut of card"),
                     image: "enthaltung",
                     description: NSLocalizedString("Ich kann oder will kein Fremdbild dazu abgeben.", comment: "Description of card"),
                     helpText:NSLocalizedString("", comment: "Helptext of card"),
-                    colorCode: Card.colorFrom(hexCode: "#aaaaaa")),
-                */
-                Card(
-                    id: 2,
-                    cardType: .zuschauer,
-                    name: NSLocalizedString("Zuschauer", comment: "Name of card"),
-                    shortCut: NSLocalizedString("Z", comment: "Shortcut of card"),
-                    image: "zuschauer",
-                    description: NSLocalizedString("Es gibt keine Beispiele,\nda ehr in anderen Bereichen enganiert.", comment: "Description of card"),
-                    helpText:NSLocalizedString("", comment: "Helptext of card"),
-                    // colorCode: Card.colorFrom(hexCode: "#c89331")),
-                    colorCode: Graphics.zuschauerColor),
-                Card(
-                    id: 3,
-                    cardType: .padawan,
-                    name: NSLocalizedString("Padawan", comment: "Name of card"),
-                    shortCut: NSLocalizedString("P", comment: "Shortcut of card"),
-                    image: "padawan",
-                    description: "Es gibt keine Beispiele,\naber Bemühungen in diesem Bereich.",
-                    helpText:NSLocalizedString("", comment: "Helptext of card"),
-                    colorCode: Card.colorFrom(hexCode: "#6589ae")),
-                Card(
-                    id: 4,
-                    cardType: .mitspieler,
-                    name: NSLocalizedString("Mitspieler", comment: "Name of card"),
-                    shortCut: NSLocalizedString("S", comment: "Shortcut of card"),
-                    image: "mitspieler",
-                    description: NSLocalizedString("Es gibt einzelne Beispiele,\ndie einigen Leuten bekannt sind.", comment: "Description of card"),
-                    helpText:NSLocalizedString("", comment: "Helptext of card"),
-                    colorCode: Card.colorFrom(hexCode: "#c46651")),
-                Card(
-                    id: 5,
-                    cardType: .macher,
-                    name: NSLocalizedString("Macher", comment: "Name of card"),
-                    shortCut: NSLocalizedString("M", comment: "Shortcut of card"),
-                    image: "macher",
-                    description: NSLocalizedString("Track-Record ist vorhanden.\nEs gibt viele Beispiele, die man nennen kann.", comment: "Description of card"),
-                    helpText:NSLocalizedString("", comment: "Helptext of card"),
-                    colorCode: Card.colorFrom(hexCode: "#7a579d")),
-                Card(
-                    id: 6,
-                    cardType: .vorbild,
-                    name: NSLocalizedString("Vorbild", comment: "Name of card"),
-                    shortCut: NSLocalizedString("V", comment: "Shortcut of card"),
-                    image: "vorbild",
-                    description: NSLocalizedString("Track-Record ist vorhanden.\nEs gibt viele Beispiele, die man nennen kann.\nAndere wurden von diesem Vorbild inspiriert.", comment: "Description of card"),
-                    helpText:NSLocalizedString("", comment: "Helptext of card"),
-                    colorCode: Card.colorFrom(hexCode: "#669374"))
-            ]
+                    colorCode: Card.colorFrom(hexCode: "#aaaaaa")
+                )
+            )
         }
+        
+        CardDataProvider.arr.append(
+            Card(
+                id: 2,
+                cardType: .zuschauer,
+                name: NSLocalizedString("Zuschauer", comment: "Name of card"),
+                shortCut: options.useNumericLevelShortCuts ? "1" : NSLocalizedString("Z", comment: "Shortcut of card"),
+                image: "zuschauer",
+                description: NSLocalizedString("Es gibt keine Beispiele,\nda ehr in anderen Bereichen enganiert.", comment: "Description of card"),
+                helpText:NSLocalizedString("", comment: "Helptext of card"),
+                colorCode: Card.colorFrom(hexCode: "#c89331")
+            )
+        )
+        
+        CardDataProvider.arr.append(
+            Card(
+                id: 3,
+                cardType: .padawan,
+                name: NSLocalizedString("Padawan", comment: "Name of card"),
+                shortCut: options.useNumericLevelShortCuts ? "2" : NSLocalizedString("P", comment: "Shortcut of card"),
+                image: "padawan",
+                description: "Es gibt keine Beispiele,\naber Bemühungen in diesem Bereich.",
+                helpText:NSLocalizedString("", comment: "Helptext of card"),
+                colorCode: Card.colorFrom(hexCode: "#6589ae")
+            )
+        )
     
-        // Möchte ich in den Settings festlegen, ob die ?-Karte angezeigt werden soll oder eben nicht. Ist per Default aus!!!
-        
-/*
-        
-        if let plist = Bundle.main.infoDictionary?["CardDeck"] as? String {
+        CardDataProvider.arr.append(
             
-            let path = Bundle.main.path(forResource: plist, ofType: "plist")!
-            let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-            let options = PropertyListSerialization.MutabilityOptions();
-            
-            let array = try! PropertyListSerialization.propertyList(
-                from: data,
-                options: options,
-                format: nil) as! [[String: String]]
-            
-        }
-*/
+            Card(
+                id: 4,
+                cardType: .mitspieler,
+                name: NSLocalizedString("Mitspieler", comment: "Name of card"),
+                shortCut: options.useNumericLevelShortCuts ? "3" : NSLocalizedString("S", comment: "Shortcut of card"),
+                image: "mitspieler",
+                description: NSLocalizedString("Es gibt einzelne Beispiele,\ndie einigen Leuten bekannt sind.", comment: "Description of card"),
+                helpText:NSLocalizedString("", comment: "Helptext of card"),
+                colorCode: Card.colorFrom(hexCode: "#c46651")
+            )
+        )
+
+        CardDataProvider.arr.append(
+            Card(
+                id: 5,
+                cardType: .macher,
+                name: NSLocalizedString("Macher", comment: "Name of card"),
+                shortCut: options.useNumericLevelShortCuts ? "4" : NSLocalizedString("M", comment: "Shortcut of card"),
+                image: "macher",
+                description: NSLocalizedString("Track-Record ist vorhanden.\nEs gibt viele Beispiele, die man nennen kann.", comment: "Description of card"),
+                helpText:NSLocalizedString("", comment: "Helptext of card"),
+                colorCode: Card.colorFrom(hexCode: "#7a579d")
+            )
+        )
         
+        CardDataProvider.arr.append(
+            Card(
+                id: 6,
+                cardType: .vorbild,
+                name: NSLocalizedString("Vorbild", comment: "Name of card"),
+                shortCut: options.useNumericLevelShortCuts ? "5" : NSLocalizedString("V", comment: "Shortcut of card"),
+                image: "vorbild",
+                description: NSLocalizedString("Track-Record ist vorhanden.\nEs gibt viele Beispiele, die man nennen kann.\nAndere wurden von diesem Vorbild inspiriert.", comment: "Description of card"),
+                helpText:NSLocalizedString("", comment: "Helptext of card"),
+                colorCode: Card.colorFrom(hexCode: "#669374")
+            )
+        )
+        
+        return CardDataProvider.arr
     }
-    /*
-    private func loadFromPlistNamed(_ plist: String, bundle: Bundle = Bundle.main) -> [Card] {
-        
-        let path = Bundle.main.path(forResource: plist, ofType: "plist")!
-        let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-        
-        let options = PropertyListSerialization.MutabilityOptions();
-        
-        let array = try! PropertyListSerialization.propertyList(from: data, options: options, format: nil) as! [[String: String]]
-    
-        return fromDictionaryArray(array)
-    }
-    */
-    /*
-    private func fromDictionaryArray(_ array: [[String: String]]) -> [Card] {
-        
-        var cards: [Card] = []
-     
-        for dict in array {
-            if let card = Card(dictionary: dict) {
-                cards.append(card)
-            }
-        }
-     
-        return cards
-    }
-    */
 }
-
-
 
 class CardDeck {
 
     var index: Int = 0
 
-    static let cards: [Card] = CardDataProvider.cards
-
+    static var cards: [Card] {
+        
+        get {
     
-    private init() { }
-
+            return CardDataProvider().cards()
+        }
+    }
+    
+    static func reset() {
+        
+        CardDataProvider.reset()
+    }
+    
     static let sharedInstance : CardDeck = {
+
         let instance = CardDeck()
 
         return instance
