@@ -153,7 +153,7 @@
 					24A22A001E1569E7006C7F7A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = L79BTFY6FV;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -355,12 +355,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = L79BTFY6FV;
 				INFOPLIST_FILE = FeedbackCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.mayflower.jo.feedbackcards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "437f6dbb-e4fd-401b-a4bc-b37afdba4e6e";
+				PROVISIONING_PROFILE_SPECIFIER = FeedbackCards;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -369,12 +372,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = L79BTFY6FV;
 				INFOPLIST_FILE = FeedbackCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.mayflower.jo.feedbackcards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "437f6dbb-e4fd-401b-a4bc-b37afdba4e6e";
+				PROVISIONING_PROFILE_SPECIFIER = FeedbackCards;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
