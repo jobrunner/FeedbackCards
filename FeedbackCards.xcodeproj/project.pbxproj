@@ -148,7 +148,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Mayflower GmbH";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					24A22A001E1569E7006C7F7A = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -359,7 +359,7 @@
 				INFOPLIST_FILE = FeedbackCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.mayflower.jo.FeedbackCards;
+				PRODUCT_BUNDLE_IDENTIFIER = de.mayflower.jo.feedbackcards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -373,7 +373,7 @@
 				INFOPLIST_FILE = FeedbackCards/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.mayflower.jo.FeedbackCards;
+				PRODUCT_BUNDLE_IDENTIFIER = de.mayflower.jo.feedbackcards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
