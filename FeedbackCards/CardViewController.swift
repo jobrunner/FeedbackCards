@@ -23,7 +23,7 @@ import UIKit
 class CardViewController: UIViewController {
 
     let cornerRadius: CGFloat = 6.5
-    let alpha: CGFloat = 0.8
+    let alpha: CGFloat = 0.7
 
     var primaryColor: UIColor!
 
