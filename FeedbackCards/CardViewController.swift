@@ -105,6 +105,8 @@ class CardViewController: UIViewController {
             stackView.axis = .vertical
         }
         
+        figureCardView.setNeedsDisplay()
+        
         coordinator.animate(
             alongsideTransition: { _ in
                 
