@@ -88,7 +88,7 @@ struct CardDataProvider {
                     name: NSLocalizedString("Enthaltung", comment: "Name of card"),
                     shortCut: options.useNumericLevelShortCuts ? "?" : NSLocalizedString("?", comment: "Shortcut of card"),
                     image: "enthaltung",
-                    description: NSLocalizedString("Ich kann oder will kein Fremdbild dazu abgeben.", comment: "Description of card"),
+                    description: NSLocalizedString("Ich kann oder will kein Feedback abgeben.", comment: "Description of card"),
                     helpText:NSLocalizedString("", comment: "Helptext of card"),
                     colorCode: Card.colorFrom(hexCode: "#aaaaaa")
                 )
@@ -102,7 +102,7 @@ struct CardDataProvider {
                 name: NSLocalizedString("Zuschauer", comment: "Name of card"),
                 shortCut: options.useNumericLevelShortCuts ? "1" : NSLocalizedString("Z", comment: "Shortcut of card"),
                 image: "zuschauer",
-                description: NSLocalizedString("Es gibt keine Beispiele,\nda ehr in anderen Bereichen enganiert.", comment: "Description of card"),
+                description: NSLocalizedString("Es gibt keine Beispiele,\nda eher in anderen Bereichen engangiert.", comment: "Description of card"),
                 helpText:NSLocalizedString("", comment: "Helptext of card"),
                 colorCode: Card.colorFrom(hexCode: "#c89331")
             )
