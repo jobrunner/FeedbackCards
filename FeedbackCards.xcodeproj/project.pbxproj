@@ -36,7 +36,6 @@
 		2406EE5F1E19491B00E6D302 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		2406EE611E19586300E6D302 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2406EE631E19A18C00E6D302 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
-		2406EE681E19B1D900E6D302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		2406EE691E19B66000E6D302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2406EE6D1E1A9D2800E6D302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2406EE721E1A9D2900E6D302 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		24A22A0B1E1569E7006C7F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24A22A0E1E1569E7006C7F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24A22A101E1569E7006C7F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FB37581E26AAFC008CB338 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,7 +239,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				24A22A091E1569E7006C7F7A /* Base */,
-				2406EE681E19B1D900E6D302 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -249,6 +248,7 @@
 			children = (
 				24A22A0E1E1569E7006C7F7A /* Base */,
 				2406EE691E19B66000E6D302 /* en */,
+				24FB37581E26AAFC008CB338 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
