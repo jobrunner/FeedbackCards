@@ -23,11 +23,18 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
-
+    @IBOutlet weak var appTitleLabel: UILabel!
+    @IBOutlet weak var appTitleSubtext: UILabel!
+    @IBOutlet weak var appSubtitleLabel: UILabel!
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
 
+        appTitleLabel.text = NSLocalizedString("Feedback Karten", comment: "Short title of App")
+        appSubtitleLabel.text = "No-Device-Policy-Hack"
+        
+        
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(reloadData),

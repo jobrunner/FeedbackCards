@@ -97,6 +97,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="appSubtitleLabel" destination="cmd-9i-dEW" id="Mnl-a6-2lA"/>
+                        <outlet property="appTitleLabel" destination="Mse-jk-T9D" id="595-LP-5FI"/>
+                        <outlet property="appTitleSubtext" destination="cmd-9i-dEW" id="wpH-dt-JZY"/>
                         <outlet property="collectionView" destination="GW6-os-pAo" id="Fsg-CB-OvX"/>
                         <segue destination="RYE-Ib-6di" kind="presentation" identifier="PageViewControllerSegue" id="nPU-he-sBC"/>
                     </connections>
