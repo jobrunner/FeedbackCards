@@ -31,8 +31,25 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         appTitleLabel.text = NSLocalizedString("Feedback Karten", comment: "Short title of App")
-        appSubtitleLabel.text = "No-Device-Policy-Hack"
         
+        let font = appSubtitleLabel.font
+        let fontSize = appSubtitleLabel.font.pointSize * 0.56
+        let attributedString = NSMutableAttributedString(
+            string:"No-Device-Policy-HackTM",
+            attributes:[
+                NSFontAttributeName: font!
+            ])
+        
+        attributedString.setAttributes([
+            NSFontAttributeName: font!.withSize(fontSize),
+                NSBaselineOffsetAttributeName: fontSize
+            ],
+            range: NSRange(
+                location: attributedString.length - 2,
+                length: 2
+        ))
+        
+        appSubtitleLabel.attributedText = attributedString
         
         NotificationCenter.default.addObserver(
             self,

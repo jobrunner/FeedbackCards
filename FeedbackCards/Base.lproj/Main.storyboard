@@ -40,22 +40,29 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback Karten" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mse-jk-T9D">
-                                <rect key="frame" x="108.5" y="182" width="103" height="16"/>
+                                <rect key="frame" x="94" y="182" width="132" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="DTt-ED-0cA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No-Device-Policy-Hack" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmd-9i-dEW">
-                                <rect key="frame" x="113.5" y="200" width="93" height="11"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmd-9i-dEW">
+                                <rect key="frame" x="113.5" y="200" width="93" height="12"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="93" id="W5C-HD-hVc"/>
-                                    <constraint firstAttribute="height" constant="11" id="mU0-bu-kOi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="93" id="W5C-HD-hVc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="11" id="mU0-bu-kOi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica-Oblique" family="Helvetica" pointSize="9"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="No-Device-Policy-Hack">
+                                        <attributes>
+                                            <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="9" name="Futura-MediumItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmp-ZP-SIo">
