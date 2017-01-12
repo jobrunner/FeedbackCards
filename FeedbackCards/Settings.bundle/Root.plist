@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>StringsTable</key>
-	<string>Root</string>
-	<key>PreferenceSpecifiers</key>
-	<array>
-		<dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>Konfiguration</string>
-            <key>FooterText</key>
-            <string>Die Enthaltungskarte sollte nicht oder nur selten verwendet werden.</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSToggleSwitchSpecifier</string>
-			<key>Title</key>
-			<string>Zusätzliche Enthaltungskarte</string>
-			<key>Key</key>
-			<string>showAbstentionCard</string>
-			<key>DefaultValue</key>
-			<false/>
-		</dict>
-        <dict>
-            <key>Type</key>
-            <string>PSGroupSpecifier</string>
-        </dict>
-        <dict>
-            <key>Type</key>
-            <string>PSToggleSwitchSpecifier</string>
-            <key>Title</key>
-            <string>Verwende numerische Level</string>
-            <key>Key</key>
-            <string>useNumericLevelShortCuts</string>
-            <key>DefaultValue</key>
-            <false/>
-        </dict>
-        <dict>
-            <key>Type</key>
-            <string>PSGroupSpecifier</string>
-            <key>Title</key>
-            <string>Feedback</string>
-            <key>FooterText</key>
-            <string>Copyright © 2016-2017 Jo Brunner. Alle Rechte vorberhalten.</string>
-        </dict>
-        <dict>
-            <key>Type</key>
-            <string>PSTitleValueSpecifier</string>
-            <key>Title</key>
-            <string>Version</string>
-            <key>Key</key>
-            <string>appVersion</string>
-            <key>DefaultValue</key>
-            <string>0.0.0 (0)</string>
-        </dict>
-        <dict>
-            <key>Type</key>
-            <string>PSChildPaneSpecifier</string>
-            <key>Title</key>
-            <string>Anmerkungen</string>
-            <key>File</key>
-            <string>Pods-FeedbackCards-settings-metadata</string>
-        </dict>
-	</array>
-</dict>
+    <dict>
+        <key>StringsTable</key>
+        <string>Root</string>
+        <key>PreferenceSpecifiers</key>
+        <array>
+            <dict>
+                <key>Type</key>
+                <string>PSGroupSpecifier</string>
+                <key>Title</key>
+                <string>Konfiguration</string>
+                <key>FooterText</key>
+                <string>Die Enthaltungskarte sollte nicht oder nur selten verwendet werden.</string>
+            </dict>
+            <dict>
+                <key>Type</key>
+                <string>PSToggleSwitchSpecifier</string>
+                <key>Title</key>
+                <string>Zusätzliche Enthaltungskarte</string>
+                <key>Key</key>
+                <string>showAbstentionCard</string>
+                <key>DefaultValue</key>
+                <false/>
+            </dict>
+            <dict>
+                <key>Type</key>
+                <string>PSGroupSpecifier</string>
+            </dict>
+            <dict>
+                <key>Type</key>
+                <string>PSToggleSwitchSpecifier</string>
+                <key>Title</key>
+                <string>Verwende numerische Level</string>
+                <key>Key</key>
+                <string>useNumericLevelShortCuts</string>
+                <key>DefaultValue</key>
+                <false/>
+            </dict>
+            <dict>
+                <key>Type</key>
+                <string>PSGroupSpecifier</string>
+                <key>Title</key>
+                <string>Feedback</string>
+                <key>FooterText</key>
+                <string>Copyright © 2017 Jo Brunner. Alle Rechte vorberhalten.</string>
+            </dict>
+            <dict>
+                <key>Type</key>
+                <string>PSTitleValueSpecifier</string>
+                <key>Title</key>
+                <string>Version</string>
+                <key>Key</key>
+                <string>appVersion</string>
+                <key>DefaultValue</key>
+                <string>0.0.0 (0)</string>
+            </dict>
+            <dict>
+                <key>Type</key>
+                <string>PSChildPaneSpecifier</string>
+                <key>Title</key>
+                <string>Anmerkungen</string>
+                <key>File</key>
+                <string>Pods-FeedbackCards-settings-metadata</string>
+            </dict>
+        </array>
+    </dict>
 </plist>
