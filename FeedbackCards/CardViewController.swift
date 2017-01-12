@@ -148,6 +148,8 @@ class CardViewController: UIViewController {
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self,
                                                          action: #selector(actionClose(_:))))
+        view.addGestureRecognizer(UIPanGestureRecognizer(target: self,
+                                                   action: #selector(actionClose(_:))))
     }
 }
 
