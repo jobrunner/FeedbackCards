@@ -23,11 +23,34 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
-
+    @IBOutlet weak var appTitleLabel: UILabel!
+    @IBOutlet weak var appSubtitleLabel: UILabel!
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
 
+        appTitleLabel.text = NSLocalizedString("Feedback Karten", comment: "Short title of App")
+        
+        let font = appSubtitleLabel.font
+        let fontSize = appSubtitleLabel.font.pointSize * 0.56
+        let attributedString = NSMutableAttributedString(
+            string:"No-Device-Policy-HackTM",
+            attributes:[
+                NSAttributedStringKey.font: font!
+            ])
+        
+        attributedString.setAttributes([
+            NSAttributedStringKey.font: font!.withSize(fontSize),
+                NSAttributedStringKey.baselineOffset: fontSize
+            ],
+            range: NSRange(
+                location: attributedString.length - 2,
+                length: 2
+        ))
+        
+        appSubtitleLabel.attributedText = attributedString
+        
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(reloadData),
@@ -83,7 +106,7 @@ extension MainViewController {
         collectionView!.register(nib, forCellWithReuseIdentifier: "MenuCardCollectionViewCell")
     }
     
-    func reloadData() {
+    @objc func reloadData() {
         
         CardDeck.reset()
         collectionView.reloadData()

@@ -64,13 +64,6 @@ class CardViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(dismissViewController),
-            name: UserDefaults.didChangeNotification,
-            object: nil
-        )
     }
 
     override func didReceiveMemoryWarning() {
@@ -148,16 +141,23 @@ class CardViewController: UIViewController {
         
         view.addGestureRecognizer(UITapGestureRecognizer(target: self,
                                                          action: #selector(actionClose(_:))))
+        
+        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self,
+                                                              action: #selector(actionClose(_:)))
+        swipeGestureRecognizer.direction = .down
+        view.addGestureRecognizer(swipeGestureRecognizer)
     }
 }
 
 extension CardViewController {
 
+    @objc
     func dismissViewController() {
 
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
+    @objc
     func actionClose(_ tap: UITapGestureRecognizer) {
         
         dismissViewController()

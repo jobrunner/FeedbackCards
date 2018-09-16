@@ -23,7 +23,6 @@ import UIKit
 @IBDesignable
 class CardFigureView: UIView {
 
-    @IBInspectable
     var cardType: CardType = .design {
         
         didSet {

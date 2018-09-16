@@ -85,14 +85,14 @@ die einigen Leuten bekannt sind.</source>
         <note>Description of card</note><target>There are some examples,
 which are known to some people.</target>
       </trans-unit>
-      <trans-unit id="Es gibt keine Beispiele,\nda ehr in anderen Bereichen enganiert.">
+      <trans-unit id="Es gibt keine Beispiele,\nda eher in anderen Bereichen engagiert.">
         <source>Es gibt keine Beispiele,
-da ehr in anderen Bereichen enganiert.</source>
+da ehr in anderen Bereichen engagiert.</source>
         <note>Description of card</note><target>There are no examples,
 therefore engaged in other areas.</target>
       </trans-unit>
-      <trans-unit id="Ich kann oder will kein Fremdbild dazu abgeben.">
-        <source>Ich kann oder will kein Fremdbild dazu abgeben.</source>
+      <trans-unit id="Ich kann oder will kein Feedback abgeben.">
+        <source>Ich kann oder will kein Feedback abgeben.</source>
         <note>Description of card</note><target>I can not or do not want to give feedback.</target>
       </trans-unit>
       <trans-unit id="M">

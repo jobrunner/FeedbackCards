@@ -95,12 +95,12 @@ class Graphics: NSObject {
         
         /// ?
         let layer = NSMutableAttributedString(string: "?")
-        layer.addAttribute(NSFontAttributeName, value: UIFont(name: "Helvetica", size: 90)!, range: NSRange(location: 0, length: layer.length))
-        layer.addAttribute(NSForegroundColorAttributeName, value: UIColor(hue: 0.764, saturation: 0.673, brightness: 0.961, alpha: 1), range: NSRange(location: 0, length: layer.length))
+        layer.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "Helvetica", size: 90)!, range: NSRange(location: 0, length: layer.length))
+        layer.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor(hue: 0.764, saturation: 0.673, brightness: 0.961, alpha: 1), range: NSRange(location: 0, length: layer.length))
         do {
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.alignment = .center
-            layer.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSRange(location: 0, length: layer.length))
+            layer.addAttribute(NSAttributedStringKey.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: layer.length))
         }
         context.saveGState()
         layer.draw(at: CGPoint(x: 25, y: -3))
