@@ -64,13 +64,6 @@ class CardViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(dismissViewController),
-            name: UserDefaults.didChangeNotification,
-            object: nil
-        )
     }
 
     override func didReceiveMemoryWarning() {
