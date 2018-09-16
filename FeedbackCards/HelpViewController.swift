@@ -48,7 +48,7 @@ class HelpViewController: UIViewController {
 
 extension HelpViewController {
     
-    func actionClose(_ tap: UITapGestureRecognizer) {
+    @objc func actionClose(_ tap: UITapGestureRecognizer) {
         
         dismissViewController()
     }
