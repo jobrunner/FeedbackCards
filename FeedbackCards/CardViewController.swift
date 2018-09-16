@@ -151,11 +151,13 @@ class CardViewController: UIViewController {
 
 extension CardViewController {
 
+    @objc
     func dismissViewController() {
 
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
     
+    @objc
     func actionClose(_ tap: UITapGestureRecognizer) {
         
         dismissViewController()

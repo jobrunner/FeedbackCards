@@ -37,12 +37,12 @@ class MainViewController: UIViewController {
         let attributedString = NSMutableAttributedString(
             string:"No-Device-Policy-HackTM",
             attributes:[
-                NSFontAttributeName: font!
+                NSAttributedStringKey.font: font!
             ])
         
         attributedString.setAttributes([
-            NSFontAttributeName: font!.withSize(fontSize),
-                NSBaselineOffsetAttributeName: fontSize
+            NSAttributedStringKey.font: font!.withSize(fontSize),
+                NSAttributedStringKey.baselineOffset: fontSize
             ],
             range: NSRange(
                 location: attributedString.length - 2,
@@ -106,7 +106,7 @@ extension MainViewController {
         collectionView!.register(nib, forCellWithReuseIdentifier: "MenuCardCollectionViewCell")
     }
     
-    func reloadData() {
+    @objc func reloadData() {
         
         CardDeck.reset()
         collectionView.reloadData()
