@@ -122,7 +122,6 @@ struct CardDataProvider {
         )
     
         CardDataProvider.arr.append(
-            
             Card(
                 id: 4,
                 cardType: .mitspieler,
@@ -170,7 +169,6 @@ class CardDeck {
     var index: Int = 0
 
     static var cards: [Card] {
-        
         get {
     
             return CardDataProvider().cards()
