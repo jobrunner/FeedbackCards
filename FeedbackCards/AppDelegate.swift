@@ -25,12 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         let defaults = UserDefaults.standard
         defaults.set(Bundle.main.versionNumber, forKey: "appVersion")
         defaults.synchronize()
-        
+
+        window?.backgroundColor = UIColor(red: 0.57, green:  0.57, blue:  0.57, alpha: 1.0)
+        window?.makeKeyAndVisible()
+
         return true
     }
     

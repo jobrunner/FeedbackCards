@@ -83,7 +83,9 @@ class MenuCardCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayo
         //
         let presentingController = collectionView.parentViewController
         let pageViewController = StoryboardHelper.controller("CardPageViewController") as! CardPageViewController
-        
+
+        pageViewController.modalPresentationStyle = .fullScreen
+
         presentingController?.present(pageViewController, animated: true, completion: {
 
             
